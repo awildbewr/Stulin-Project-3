@@ -22,12 +22,13 @@ struct TTuple: CustomStringConvertible {
     self.newState = newState
     self.outputChar = outputChar
     self.direction = direction
+    self.description = "placeholder"
   }
   var description: String
   //Method needed for extra credit
-  init(tupleString: String) {
+  // init(tupleString: String) {
 
-  }
+  // }
   func nakedTuple() -> String {
     return "placeholder"
   }
