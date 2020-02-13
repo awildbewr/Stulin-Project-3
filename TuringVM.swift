@@ -4,11 +4,17 @@ class TuringVM {
   }
   
   func nakedTupleReport() -> String {
-    return "placeholder"
+    var tuple = ""
+    for t in ttuplesArray {
+      tuple += "\(t)\n"
+    }
+    return "cs is ns oc di\n" + tuple
   }
 
-  init(ttuplesArray: [TTuple]) {
+  var ttuplesArray: [TTuple]
 
+  init(ttuplesArray: [TTuple]) {
+    self.ttuplesArray = ttuplesArray
   }
 
   // private(set) numberTuples: Int

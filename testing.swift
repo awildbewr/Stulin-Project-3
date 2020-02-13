@@ -15,4 +15,5 @@ func simpleTuringRun() {
   print("Number Steps In Run: \(result.numberSteps)")
   print("Final Tape: \(result.finalTape)")
   print("\nTrace:")
+  for line in result.trace{print("" + line)}
 }

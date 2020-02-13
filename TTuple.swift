@@ -22,8 +22,15 @@ struct TTuple: CustomStringConvertible {
     self.newState = newState
     self.outputChar = outputChar
     self.direction = direction
-    self.description = "placeholder"
+    if "\(direction)" == "right" {
+      self.description = "\(currentState)  \(inputChar)  \(newState)  \(outputChar)  r"
+    } else {
+      self.description = "\(currentState)  \(inputChar)  \(newState)  \(outputChar)  l"
+    }
+    
   }
+
+
   var description: String
   //Method needed for extra credit
   // init(tupleString: String) {
