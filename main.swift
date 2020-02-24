@@ -1,3 +1,5 @@
+print("\nNOTE: EDITS ARE MADE TO INPUT STRING IN REAL TIME!!!\n\n")
+
 simpleTuringRun()
 
 // void loop() {
