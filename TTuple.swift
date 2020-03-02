@@ -11,10 +11,13 @@ struct TTuple: CustomStringConvertible {
   let direction: Direction
 
   static func makeKey(state: Int, inputChar: Character) -> String {
-    return "placeholder"
+    //is very useful in making a key
+    //makes a key without a specific ttuple
+    return "\(state) \(inputChar)"
   }
   func getKey() -> String {
-    return "placeholder"
+    //utilizes TTuple
+    return description
   }
   init(currentState: Int, inputChar: Character, newState: Int, outputChar: Character, direction: Direction) {
     self.currentState = currentState
@@ -37,6 +40,6 @@ struct TTuple: CustomStringConvertible {
 
   // }
   func nakedTuple() -> String {
-    return "placeholder"
+    return "{cs: \(currentState) ic: \(inputChar) ns: \(newState) oc: \(outputChar) di: \(direction)}"
   }
 }

@@ -1,3 +1,6 @@
+//store as properties: a tape, and a dict of ttuples
+//tape is an array of characters
+
 class TuringVM {
   func tupleReport() -> String {
     return "placeholder"
@@ -24,6 +27,10 @@ class TuringVM {
   }
 
   func runTuring(initialTape: String, initialState: Int, initialHead: Int) -> (numberSteps: Int, finalTape: String, trace: [String]) {
-    return (numberSteps: 0, finalTape: "placeholder", trace: ["placeholder"])
+    var data = (numberSteps: 0, finalTape: "placeholder", trace: [""])
+    for t in ttuplesArray {
+      data.trace += [t.nakedTuple()]
+    }
+    return data
   }
 }

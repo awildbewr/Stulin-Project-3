@@ -11,9 +11,10 @@ func simpleTuringRun() {
   print("Tuples:")
   print(tvm.nakedTupleReport())
   print("Initial String: \"_111000_\" Initial State: 0 Initial Head Position: 0")
-  print("\n*Running Turing\n")
+  print("\n*Running Turing*\n")
   print("Number Steps In Run: \(result.numberSteps)")
   print("Final Tape: \(result.finalTape)")
   print("\nTrace:")
   for line in result.trace{print("" + line)}
+  print("\n\n\(tvm.ttuplesArray[0].nakedTuple())")
 }
